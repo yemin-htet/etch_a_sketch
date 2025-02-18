@@ -1,0 +1,25 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: grid;
+    width: 1000px;
+    height: 800px;
+    grid-template-columns: repeat(16,50px);
+    grid-template-rows: repeat(16,50px);
+    background-color: #1a1a1a;
+}
+
+button{
+    border: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 10%;
+    background-color:  #007bff;
+    color: white;
+    font-size: 30px;
+}
