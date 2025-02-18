@@ -42,8 +42,8 @@ const reset = document.querySelector('#reset');
  reset.addEventListener("click", ()=> {
     const divs = document.querySelectorAll('#theDiv');
     divs.forEach((d)=> {
-        d.setAttribute('style','background: #1a1a1a;');
-        d.style.boxShadow = `none`;
+        d.setAttribute('style','background: transparent;');
+        d.style.boxShadow = "none";
     }  
     )
  }
