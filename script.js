@@ -26,7 +26,7 @@ btn.addEventListener('click' ,() => {
 );
     divs.forEach((d)=>
     d.addEventListener("mouseenter", ()=>{
-        d.setAttribute('style', "border: 1px solid black");
+        d.setAttribute('style', "border: 1px solid white");
     }));
 
     divs.forEach((d)=>
@@ -41,8 +41,10 @@ btn.addEventListener('click' ,() => {
 const reset = document.querySelector('#reset');
  reset.addEventListener("click", ()=> {
     const divs = document.querySelectorAll('#theDiv');
-    divs.forEach((d)=>
-        d.setAttribute('style','background: white;')
+    divs.forEach((d)=> {
+        d.setAttribute('style','background: #1a1a1a;');
+        d.style.boxShadow = `none`;
+    }  
     )
  }
     
